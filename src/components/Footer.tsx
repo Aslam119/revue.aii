@@ -31,7 +31,7 @@ export default function Footer() {
 
     try {
       // Send email to n8n webhook
-      await fetch('https://gnosiss.app.n8n.cloud/webhook/newsletter', {
+      await fetch(process.env.REACT_APP_N8N_NEWSLETTER_URL || 'https://gnosiss.app.n8n.cloud/webhook/newsletter', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

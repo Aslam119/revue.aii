@@ -13,6 +13,7 @@ declare namespace NodeJS {
   interface ProcessEnv {
     REACT_APP_N8N_CHATBOT_URL?: string
     REACT_APP_N8N_REVUE_URL?: string
+    REACT_APP_N8N_NEWSLETTER_URL?: string
   }
 }
 
